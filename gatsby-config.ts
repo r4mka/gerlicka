@@ -1,10 +1,16 @@
+import type { GatsbyConfig } from "gatsby"
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-module.exports = {
+const config: GatsbyConfig = {
   /* Your site config here */
+  siteMetadata: {
+    siteName: "Gerlicka MakeUp",
+  },
   plugins: [
+    "gatsby-plugin-typescript-checker",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
@@ -17,3 +23,5 @@ module.exports = {
     },
   ],
 }
+
+export default config
