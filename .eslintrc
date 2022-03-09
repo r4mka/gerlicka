@@ -1,0 +1,24 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "rules": {
+    "import/order": [
+      "error", {
+        "alphabetize": {
+          "order": "asc"
+        },
+        "pathGroups": [
+          {
+            "pattern": "./**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "../**",
+            "group": "internal",
+            "position": "after"
+          }
+        ]
+      }
+    ]
+  }
+}

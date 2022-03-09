@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql, PageProps } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from 'components/Layout';
+import { graphql, PageProps } from 'gatsby';
+import React from 'react';
 
 interface IndexPageProps {
   site: {
     siteMetadata: {
-      siteName: string
-    }
-  }
+      siteName: string;
+    };
+  };
 }
 
 const Home = ({ data: { site } }: PageProps<IndexPageProps>) => (
@@ -16,7 +16,7 @@ const Home = ({ data: { site } }: PageProps<IndexPageProps>) => (
       <h1>{site.siteMetadata.siteName}</h1>
     </section>
   </Layout>
-)
+);
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -26,6 +26,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Home
+export default Home;

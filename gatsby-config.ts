@@ -1,19 +1,19 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 const config: GatsbyConfig = {
   /* Your site config here */
   siteMetadata: {
-    siteName: "Gerlicka MakeUp",
+    siteName: 'Gerlicka MakeUp',
   },
   plugins: [
-    "gatsby-plugin-typescript-checker",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-image",
+    'gatsby-plugin-typescript-checker',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -22,6 +22,6 @@ const config: GatsbyConfig = {
       },
     },
   ],
-}
+};
 
-export default config
+export default config;

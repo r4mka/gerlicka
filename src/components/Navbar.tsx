@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import { Link } from 'gatsby';
+import React from 'react';
 
 const Navbar = () => (
   <nav>
@@ -9,6 +9,6 @@ const Navbar = () => (
     <Link to="/o-mnie">O mnie</Link>
     <Link to="/kontakt">Kontakt</Link>
   </nav>
-)
+);
 
-export default Navbar
+export default Navbar;

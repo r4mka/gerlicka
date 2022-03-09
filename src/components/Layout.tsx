@@ -1,8 +1,8 @@
-import React from "react"
-import Navbar from "./Navbar"
+import React from 'react';
+import Navbar from './Navbar';
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Navbar />
       <div>{children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
